@@ -54,6 +54,10 @@ Uvicorn হলো server যেটা তোমার API run করবে।
 ```bash
 pip install fastapi uvicorn
 ```
+or,
+```bash
+python -m pip install fastapi uvicorn
+```
 
 ---
 
