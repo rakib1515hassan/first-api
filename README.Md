@@ -3,7 +3,7 @@
 ## 1. Create Virtual Environment
 #### Windows
 ```bash
-py -m venv env
+python -m venv env
 ```
 #### Linux
 ```bash
