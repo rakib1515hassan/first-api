@@ -1,16 +1,9 @@
 from fastapi import FastAPI
 
+from apis.home import router as home_router
+from apis.landing_page import router as landing_page_router
+
 app = FastAPI()
 
-
-@app.get("/")
-def home():
-    return {"message": "Hello, World! This is my first API!"}
-
-
-@app.get("/v2/landing-page")
-def LandingPageApi():
-    response = {
-        "slug": "samsung-s26-ultra-hot-sale"
-    }
-    return response
+app.include_router(home_router)
+app.include_router(landing_page_router)
